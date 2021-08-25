@@ -1,28 +1,27 @@
 import React from 'react';
 import "./Header.css";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Col } from 'react-bootstrap';
 
 const Header = () => {
   return (
     <React.Fragment>
-      <div className="d-block d-md-none text-center title">Beans of Production</div>
-      <Navbar collapseOnSelect expand="md">
-        <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav"  className="justify-content-between">
-          <Nav>
-            <Nav.Item className="p-2 nav-item">Home</Nav.Item>
-            <Nav.Item className="p-2 nav-item">About Me</Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-          <div className="d-none d-md-block title">Beans of Production</div>
-          <Navbar.Collapse id="responsive-navbar-nav"  className="justify-content-end">
-          <Nav>
-            <Nav.Item className="p-2 nav-item">My Coffees</Nav.Item>
-            <Nav.Item className="p-2 nav-item">Store</Nav.Item>
-            <Nav.Item className="p-2 nav-item">Basket</Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
+      <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+        <Container fluid >
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Col>        
+          <Navbar.Brand><span className="title">Beans of Production</span></Navbar.Brand>
+        </Col>
+        <Col lg="1" className="d-flex justify-content-end">
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav >
+              <Nav.Item className="px-4 nav-item text-nowrap">Home</Nav.Item>
+              <Nav.Item className="px-4 nav-item text-nowrap">About Me</Nav.Item>
+              <Nav.Item className="px-4 nav-item text-nowrap">My Coffees</Nav.Item>
+              <Nav.Item className="px-4 nav-item text-nowrap">Store</Nav.Item>
+              <Nav.Item className="px-4 nav-item text-nowrap">Basket</Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Col>
         </Container>
       </Navbar>
     </React.Fragment>
