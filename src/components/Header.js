@@ -7,10 +7,8 @@ const Header = () => {
     <React.Fragment>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Container fluid >
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-        <Col>        
           <Navbar.Brand><span className="title">Beans of Production</span></Navbar.Brand>
-        </Col>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Col lg="1" className="d-flex justify-content-end">
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav >
