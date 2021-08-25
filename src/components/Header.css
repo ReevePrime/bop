@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'cat_pawregular';
+  src: url('cat_paw-webfont.woff2') format('woff2'),
+       url('cat_paw-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+div.title {
+  font-family: 'cat_pawregular' !important;
+  font-size: 2em;
+  position: relative;
+  display: block;
+}
+
+div.title::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: .4em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.nav-item {
+  font-family: 'Lobster', cursive;
+}
