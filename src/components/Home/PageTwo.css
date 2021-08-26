@@ -1,0 +1,9 @@
+.PageTwo {
+  height: 100vh;
+  background-color: black;
+}
+
+figcaption {
+  padding-right: 20%;
+  text-align: right;
+}

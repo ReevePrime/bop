@@ -1,0 +1,64 @@
+.PageOne-container {
+  width: 80vw;
+  margin: auto;
+  position: relative; 
+}
+
+.PageOne-image {
+  width: 45%;
+  position: relative;
+  left: 10%;
+  top: 5vh;
+  height: 75vh;
+  background-image: url("../images/coffee.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.PageOne-card {
+  box-sizing: content-box;
+  width: 40%;
+  height: 55vh;
+  position: absolute;
+  top: 12vh;
+  left: 45%;
+  color: white;
+  background-color: rgb(46, 46, 46);
+}
+
+.PageOne-card-image {
+  height: 50%;
+  background-image: url("../images/nebs.jpg");
+  background-size: cover;
+}
+
+.PageOne-card-text {
+  margin: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .PageOne-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: auto;
+    padding: 0;
+  }
+  .PageOne-image {
+    position:initial;
+    left: 10%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .PageOne-card {
+    position:initial;
+    left: 10%;
+    width: 100%;
+  }
+
+  .PageOne-card-image {
+    height: 60%;
+  }
+}
+
