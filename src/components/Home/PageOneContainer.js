@@ -3,15 +3,17 @@ import "./PageOneContainer.css";
 
 const PageOneContainer = () => {
   return (
-  <div className="PageOne-container">
-    <div className="PageOne-image"></div>
-    <div className="PageOne-card">
-      <div className="PageOne-card-image"></div>
-      <div className="PageOne-card-text">
-        Hi, I'm Nebula.
-        My owner says I have too many toys already (the gumption), so I decided to open my own store and buy my own toys with my own money.
+  <div className="PageOne">
+    <div className="PageOne-container">
+      <div className="PageOne-image" />
+      <div className="PageOne-card">
+        <div className="PageOne-card-image" />
+        <div className="PageOne-card-text">
+          Hi, I'm Nebula.
+          My owner says I have too many toys already (the audacity of this human), 
+          so I decided to open my own store to buy toys with my own money.
+        </div>
       </div>
-      <figcaption>— Nebula</figcaption>
     </div>
   </div>  
   );

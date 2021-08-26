@@ -1,9 +1,53 @@
 .PageTwo {
-  height: 100vh;
+  height: 110vh;
   background-color: black;
 }
 
-figcaption {
-  padding-right: 20%;
-  text-align: right;
+.PageTwo-container {
+  display: grid;
+  position: relative; 
+  top: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(60vh, 1fr));
+  grid-template-areas: "left right"
+}
+
+.PageTwo-container-image {
+  grid-area: left;
+  background-image: url("../images/sleepy.jpg");
+  background-size: cover;
+}
+
+.PageTwo-container-text {
+  grid-area: right;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  margin-right: 1em;
+}
+
+.PageTwo-container-text blockquote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 10%;
+}
+
+.PageTwo-container-text p {
+  text-indent: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .PageTwo-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "up"
+    "down";
+  }
+  .PageTwo-container-image {
+    grid-area: up;
+  }
+  .PageTwo-container-text {
+    grid-area: down;
+  }
 }

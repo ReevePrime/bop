@@ -5,7 +5,7 @@ import { Navbar, Nav, Container, Col } from 'react-bootstrap';
 const Header = () => {
   return (
     <React.Fragment>
-      <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="md" bg="dark" fixed="top" variant="dark">
         <Container fluid >
           <Navbar.Brand><span className="title">Beans of Production</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
