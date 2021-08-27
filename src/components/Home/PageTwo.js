@@ -1,6 +1,15 @@
 import React from 'react';
+import { Parallax } from 'react-parallax';
 import "./PageTwo.css";
-
+import nebsgrr from "../images/grrr.jpg";
+import { whileStatement } from '@babel/types';
+const insideStyles = {
+  color: "white",
+  position: "absolute",
+  top: "180%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
 const PageTwo = () => {
   return (
     <div className="PageTwo">
@@ -14,6 +23,11 @@ const PageTwo = () => {
       </blockquote>
       </div>
     </div>
+    <Parallax bgImage={nebsgrr} className="parallax-grrr" bgImageAlt="the cat" strength={500}>
+    <div style={{ height: 200 }}>
+        <div style={insideStyles}>Buy my coffee!</div>
+      </div>
+    </Parallax>
   </div>  
     );
 }
