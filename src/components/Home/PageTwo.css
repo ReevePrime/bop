@@ -6,9 +6,10 @@
 .PageTwo-container {
   display: grid;
   position: relative; 
+  background-color: black;
   top: 5%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fit, minmax(60vh, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(60vh, auto));
   grid-template-areas: "left right"
 }
 
@@ -39,8 +40,12 @@
 
 
 @media only screen and (max-width: 768px) {
+  .PageTwo {
+    height: auto;
+  }
   .PageTwo-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: 100vh;
     grid-template-areas: "up"
     "down";
   }

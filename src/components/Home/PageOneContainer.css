@@ -41,7 +41,6 @@
   left: 45%;
   color: white;
   background-color: rgb(46, 46, 46);
-  border-radius: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -59,17 +58,21 @@
 /* Media queries for responsiveness */
 
 @media only screen and (max-width: 768px) {
+  .PageOne {
+    height: auto;
+  }
   .PageOne-container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: auto;
     margin: auto;
     padding: 0;
-    height: 100vh;
+    height: auto;
   }
   .PageOne-image {
-    position:initial;
-    left: 10%;
+    position:relative;
+    left: 0;
+    top: 10vh;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -78,17 +81,18 @@
     position:initial;
     left: 10%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   .PageOne-card-text {
     padding: auto;
-    margin: 1em;
-    font-size: 1.2em;
+    margin: .8em;
+    font-size: 1em;
+
   }
 
   .PageOne-card-image {
-    height: 60%;
+    height: 100vh;
     border-radius: 0px;
   }
 }
