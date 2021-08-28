@@ -2,7 +2,7 @@ import React from 'react';
 import { Parallax } from 'react-parallax';
 import "./PageTwo.css";
 import nebsgrr from "../images/grrr.jpg";
-import { whileStatement } from '@babel/types';
+
 const insideStyles = {
   color: "white",
   position: "absolute",
@@ -10,6 +10,7 @@ const insideStyles = {
   left: "50%",
   transform: "translate(-50%,-50%)"
 };
+
 const PageTwo = () => {
   return (
     <div className="PageTwo">
