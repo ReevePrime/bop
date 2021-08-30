@@ -1,5 +1,4 @@
 .PageTwo {
-  height: 110vh;
   background-color: black;
 }
 
@@ -7,7 +6,6 @@
   display: grid;
   position: relative; 
   background-color: black;
-  top: 5%;
   margin-bottom: 2%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, minmax(60vh, auto));

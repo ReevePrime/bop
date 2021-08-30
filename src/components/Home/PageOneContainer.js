@@ -11,7 +11,8 @@ const PageOneContainer = () => {
         <div className="PageOne-card-text">
           Hi, I'm Nebula.
           My owner says I have too many toys already (the audacity of this human), 
-          so I decided to open my own store to buy toys with my own money.
+          so I decided to open my own store to buy toys with my own money. 
+          You should go buy my coffees. You don't want me to be sad do you?
         </div>
       </div>
     </div>
