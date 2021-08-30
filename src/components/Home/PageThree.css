@@ -1,17 +1,17 @@
 .PageThree {
-  height: 100vh;
+
   background-color: black;
 }
 
 .Card-container {
 height: 100%;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 10% 1fr 1fr 1fr 10%;
 grid-template-rows: 1fr 1fr 1fr;
 grid-template-areas: 
-"card1 card1 ."
-". card2 card2"
-"card3 card3 .";
+". card1 card1 . ."
+". . card2 card2 ."
+". card3 card3 . .";
 }
 
 .card1 {
@@ -20,14 +20,43 @@ grid-template-areas:
 .card2 {
   grid-area: card2;
 }
+.card2 img {
+  order: 2;
+}
 .card3 {
   grid-area: card3;
 }
 
 .p3-card {
-  background: black;
+
   color: white;
+}
+
+.Card-presentation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.Card-presentation img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+}
+
+
+@media screen and (max-width: 720px) {
+  .title {
+    font-size: .8em;
+  }
+  .Card-container {
+    grid-template-columns: 1fr;
+  }
 }

@@ -97,3 +97,8 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .PageOne-card-image {
+    height: 50vh;
+  }
+}
