@@ -6,20 +6,34 @@
   font-style: normal;
 }
 
+
 span.title {
   color: white;
   font-family: 'cat_pawregular' !important;
   font-size: 1.8em;
 }
 
+.headercontainer {
+  padding-top: 75px;
+}
+
 .nav-item {
+
   color: white;
   font-family: 'Lobster', cursive;
   position: relative;
   cursor: pointer;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
 	transform: scale(1);
+}
 
+.navlink {
+  text-decoration: none;
+  color: white;
+}
+
+.navlink:hover {
+  color: white;
 }
 
 .nav-item:after{
@@ -33,10 +47,13 @@ span.title {
   transition: all 150ms ease-in-out;
 }
 
+.navlinkactive {
+  font-weight: bold;
+}
+
 .nav-item:hover::after {
   width: 60%;
 }
-
 
 @media screen and (max-width: 420px) {
   span.title {

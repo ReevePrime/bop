@@ -5,7 +5,7 @@ import PageThree from "./PageThree";
 
 function Home() {
   return (
-    <div>
+    <div className="scroll">
       <PageOne />
       <PageTwo />
       <PageThree />

@@ -1,7 +1,9 @@
+
 .PageOne{
   height: 100vh;
   margin: auto;
 }
+
 
 /* Background image */
 .PageOne::before {
@@ -18,7 +20,6 @@
 
 .PageOne-container {
   position: relative; 
-  top: 10%;
 }
 
 .PageOne-image {
