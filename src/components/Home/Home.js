@@ -2,6 +2,7 @@ import React from "react";
 import PageOne from "./PageOne";
 import PageTwo from "./PageTwo";
 import PageThree from "./PageThree";
+import PageFour from "./PageFour";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <PageOne />
       <PageTwo />
       <PageThree />
+      <PageFour />
     </div>
   );
 }
