@@ -1,11 +1,11 @@
 .PageTwo {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .PageTwo-container {
   display: grid;
   position: relative; 
-  background-color: black;
+
   margin-bottom: 2%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, minmax(60vh, auto));
