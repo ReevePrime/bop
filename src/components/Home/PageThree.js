@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import bags from "../images/bags.jpg";
 import paynebs from "../images/paynebs.jpg";
 import isme from "../images/isme.jpg";
+import { NavLink } from "react-router-dom";
 
 
 const PageOne = () => {
@@ -13,17 +14,23 @@ const PageOne = () => {
       <div className="Card-container">
         <Fade left>
           <div className="p3-card card1">
-          <PageThreeCard title={"My coffees!"} imgSrc={bags}/>
+          <NavLink className="navlink" activeClassName="navlinkactive" to="/coffees">
+            <PageThreeCard title={"My coffees!"} imgSrc={bags}/>
+          </NavLink>
           </div>
         </Fade>
         <Fade right>
           <div className="p3-card card2" >
-          <PageThreeCard title={"My store! (buy all my coffees)"} imgSrc={paynebs} />
+          <NavLink className="navlink" activeClassName="navlinkactive" to="/store">
+            <PageThreeCard title={"My store! (buy all my coffees)"} imgSrc={paynebs} />
+          </NavLink>
           </div>
         </Fade>
         <Fade left>
           <div className="p3-card card3">
-        <PageThreeCard title={"About me"} imgSrc={isme} />
+          <NavLink className="navlink" activeClassName="navlinkactive" to="/about">
+            <PageThreeCard title={"About me"} imgSrc={isme} />
+          </NavLink>
         </div>
         </Fade>
       </div>

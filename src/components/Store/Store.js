@@ -2,9 +2,9 @@ import React from 'react';
 
 const Store = () => {
   return (
-    <React.Fragment>
+    <div>
       The Store page!
-    </React.Fragment>
+    </div>
     );
 }
  

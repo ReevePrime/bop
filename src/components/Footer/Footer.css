@@ -1,7 +1,93 @@
-.footer {
-  background-color: grey;
+.main-footer {
   color: white;
-  height: 2em;
-  text-align: end;
-  padding-right: 2em;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 1em;
+  position: relative;
+  width: 100%;
 }
+
+/* Contact and review column */
+
+.contact {
+  grid-template-areas: contact;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  font-family: 'Lobster', cursive;
+}
+
+/* Social container */
+
+.social-container {
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+}
+
+.socialfollow {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: rgb(114, 0, 85);
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+/* location */
+
+.location {
+  position: relative;
+  text-align: center;
+  grid-template-areas: location;
+  margin: 0px auto;
+}
+
+.pin {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.amhere {
+  width: 200px;
+}
+
+@media screen and (max-width: 720px) {
+  .PageFour {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contact"
+    "location";
+  }
+}
+
