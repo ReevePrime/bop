@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Coffees = () => {
+
   return (
     <div>
-      Hi, I am the coffees page!
+      <div>Hi from Coffees</div>
     </div>
-    
     );
 }
  

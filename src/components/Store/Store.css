@@ -1,0 +1,27 @@
+.store-layout {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto;
+  gap: 2em;
+  grid-template-areas: "coffees checkout";
+}
+
+.store-coffees {
+  grid-area: coffees;
+}
+
+.store-checkout {
+  grid-area: checkout;
+  height: 300px;
+  border: 1px black dotted;
+}
+
+.store-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-dropdown {
+  margin: 0 2em;
+}
