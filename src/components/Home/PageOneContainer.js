@@ -1,6 +1,5 @@
 import React from 'react';
 import "./PageOneContainer.css";
-import { NavLink } from 'react-router-dom';
 
 const PageOneContainer = () => {
   return (
