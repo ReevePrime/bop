@@ -7,7 +7,7 @@ const Coffeecard = (item) => {
   const currentValue = useRef();
 
 
-  const addToCart = (item, qty) => {
+  const clickHandler = (item, qty) => {
     const qtySelected = parseInt(qty)
     dispatch({type: "ADD_TO_CART", qtySelected, itemData: item})
   }
@@ -33,7 +33,7 @@ const Coffeecard = (item) => {
                 <option value="3">3</option>
                 <option value="10">10</option>
               </select>
-            <Button variant="primary" onClick={() => addToCart(item.coffee, currentValue.current.value)}>Add to basket</Button>
+            <Button variant="primary" onClick={() => clickHandler(item.coffee, currentValue.current.value)}>Add to basket</Button>
           </div>
           </div>
         </Card.Body>
