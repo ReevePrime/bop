@@ -3,7 +3,7 @@ export const allcoffees = [
     id: 1,
     name: "coffee1",
     description: "Hi, I am coffee1 placeholder",
-    price: 1
+    price: 1,
   },
   {
     id: 2,

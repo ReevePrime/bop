@@ -20,7 +20,7 @@ const Store = () => {
         <div className="store-checkout">
           <ul>
             {itemsBought.map(item => {
-              return <li>{item}</li>
+              return <li>{item.name}</li>
             })}
           </ul>
           <div>Qty: {qtyitems}</div>
