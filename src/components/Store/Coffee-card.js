@@ -9,7 +9,9 @@ const Coffeecard = (item) => {
 
   const clickHandler = (item, qty) => {
     const qtySelected = parseInt(qty)
-    dispatch({type: "ADD_TO_CART", qtySelected, itemData: item})
+    const totalCost = item.price * qtySelected;
+    console.log(totalCost)
+    dispatch({type: "ADD_TO_CART", qtySelected, totalCost, itemData: item})
   }
 
 
