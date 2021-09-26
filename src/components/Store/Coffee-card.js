@@ -6,14 +6,11 @@ const Coffeecard = (item) => {
   const dispatch = useDispatch();
   const currentValue = useRef();
 
-
   const clickHandler = (item, qty) => {
     const qtySelected = parseInt(qty)
     const totalCost = item.price * qtySelected;
-    console.log(totalCost)
     dispatch({type: "ADD_TO_CART", qtySelected, totalCost, itemData: item})
   }
-
 
   return (
     <div>

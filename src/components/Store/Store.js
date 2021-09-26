@@ -1,14 +1,12 @@
 import React from 'react';
 import Coffeecard from './Coffee-card';
-import { useSelector } from 'react-redux';
 import { allcoffees } from '../Coffees/coffee-list';
+import Checkout from './Checkout';
 import "./Store.css";
 
-const Store = () => {
-  const qtyitems = useSelector(state => state.shop.qtyitems)
-  const price = useSelector(state => state.shop.totalprice)
-  const itemsBought = useSelector(state => state.shop.products)
 
+
+const Store = () => {
   const coffeelist = allcoffees.map(coffee => <Coffeecard coffee={coffee} key={coffee.id}/>);
 
   return (
@@ -17,15 +15,7 @@ const Store = () => {
         <div className="store-coffees">
           {coffeelist}
           </div>
-        <div className="store-checkout">
-          <ul>
-            {itemsBought.map(item => {
-              return <li>{item.name}</li>
-            })}
-          </ul>
-          <div>Qty: {qtyitems}</div>
-          <div>Price: {price}</div>
-        </div>
+        <Checkout />        
       </div>
     </div>
     );

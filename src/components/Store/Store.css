@@ -13,8 +13,14 @@
 
 .store-checkout {
   grid-area: checkout;
+  display: grid;
   height: 300px;
   border: 1px black dotted;
+  position: relative;
+}
+
+.store-list {
+  padding: 0;
 }
 
 .store-button {
@@ -24,4 +30,21 @@
 
 .store-dropdown {
   margin: 0 2em;
+}
+
+.item-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.checkout-total {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+}
+
+.icon-dark {
+  color: black;
+  cursor: pointer;
 }

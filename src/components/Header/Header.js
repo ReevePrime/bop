@@ -22,7 +22,8 @@ const Header = () => {
               <Nav.Item className="px-4 text-nowrap"><NavLink className="navlink" activeClassName="navlinkactive" to="/about">About me</NavLink></Nav.Item>
               <Nav.Item className="px-4 text-nowrap"><NavLink className="navlink" activeClassName="navlinkactive" to="/coffees">My coffees</NavLink></Nav.Item>
               <Nav.Item className="px-4 text-nowrap"><NavLink className="navlink" activeClassName="navlinkactive" to="/store">Store</NavLink></Nav.Item>
-              <Badge bg="secondary">{basket}</Badge>
+              <span class="material-icons md-18">shopping_basket</span>
+              <div className="basket-icon"><Badge bg="secondary">{basket}</Badge></div>
             </Nav>
           </Navbar.Collapse>
         </Col>
