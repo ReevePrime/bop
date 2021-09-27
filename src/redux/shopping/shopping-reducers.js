@@ -26,10 +26,8 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         totalprice: state.totalprice - (action.itemData.qty * action.itemData.price),
         products: [...newProducts]
       }
-    case actionTypes.ADJUST_QTY:
-      return {}
-    default:
-      return state;
+        default:
+       return {...state};
   }
 }
 
