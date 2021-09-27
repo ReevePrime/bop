@@ -1,0 +1,67 @@
+.store-layout {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto;
+  gap: 2em;
+  grid-template-areas: "coffees checkout";
+}
+
+.store-coffees {
+  grid-area: coffees;
+}
+
+.store-checkout {
+  grid-area: checkout;
+  display: grid;
+  height: 300px;
+  border: 1px black dotted;
+  position: relative;
+}
+
+.store-list {
+  padding: 0;
+  
+}
+
+.store-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-dropdown {
+  margin: 0 2em;
+  width: 120px;
+}
+
+.item-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.checkout-total {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+
+}
+
+.icon-dark {
+  color: black;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: -3em;
+  justify-content: space-between;
+}
+
+
+.couponIsValid {
+  color: red;
+  text-decoration:line-through;
+}
