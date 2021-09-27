@@ -53,9 +53,18 @@ span.title {
   width: 60%;
 }
 
-@media screen and (max-width: 420px) {
+.material-icons {
+  color: white;
+  margin-left: 1em;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width: 780px) {
   span.title {
     font-size: 1.5em;
+  }
+  .basket-icon {
+    padding: 0 20px;
   }
 }
 

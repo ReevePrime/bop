@@ -12,10 +12,6 @@ const Coffeecard = (item) => {
     dispatch({type: "ADD_TO_CART", qtySelected, totalCost, itemData: item})
   }
 
-  const options = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-  const optionList = options.map(op => <option disabled>{op} [SOLD OUT]</option>)
-
-
   return (
     <div>
       <Card>
@@ -31,7 +27,9 @@ const Coffeecard = (item) => {
           <div>
             <label htmlFor="value">Choose a quantity: </label>
               <select ref={currentValue} name="order" id="order" className="store-dropdown">
-                {optionList}
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <option value="10">10</option>
               </select>
             <Button variant="primary" onClick={() => clickHandler(item.coffee, currentValue.current.value)}>Add to basket</Button>

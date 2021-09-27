@@ -31,7 +31,6 @@
 
 .store-dropdown {
   margin: 0 2em;
-  width: 120px;
 }
 
 .item-list {
@@ -59,7 +58,6 @@
   bottom: -3em;
   justify-content: space-between;
 }
-
 
 .couponIsValid {
   color: red;
