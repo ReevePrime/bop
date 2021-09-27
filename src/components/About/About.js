@@ -35,9 +35,9 @@ const About = () => {
       </div>
       <div className="before-after">
         <Image className="nebsimage" src={nebsbefore}></Image>
-          This is me before coffee. Asleep, unproductive, a disgrace to society.
+          <div className="About-text">This is me before coffee. Asleep, unproductive, a disgrace to society.</div>
         <Image className="nebsimage" src={nebsafter}></Image>
-          And this is me now, looking great (thank you). I haven't slept in 3 days, I have been contributing to society.
+          <div className="About-text">And this is me now, looking great (thank you). I haven't slept in 3 days, I have been contributing to society.</div>
       </div>
       <div className="gamimage-container">
         This is my sister Gamora. She spends her time sleeping, sunbathing and playing video games. What a loser.

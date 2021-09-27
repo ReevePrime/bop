@@ -1,5 +1,7 @@
+
 .About-page {
-  width: 100vw;
+  margin-top: -1em;
+  width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -14,7 +16,6 @@
   width: 800px;
   height: 600px;
   margin: auto;
-  clear:both;
 }
 
 .color-black {
@@ -29,6 +30,7 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .nebsimage {
@@ -44,5 +46,32 @@
 }
 
 .gamimage {
-  padding: 2em;
+  padding: 2em 0;
 }
+
+
+@media only screen and (max-width: 720px) {
+  .About-page {
+    max-width: auto;
+  }
+
+  .nebsimage {
+    max-width: 100vw;
+  }
+
+  .carousel-container {
+    width: auto;
+    height: auto;
+    margin: auto;
+    clear:both;
+  }
+  
+  .gamimage-container {
+    width: 100%;
+  }
+
+  .About-text {
+    padding: 1.5em;
+  }
+
+  }
