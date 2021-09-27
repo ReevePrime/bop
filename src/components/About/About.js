@@ -4,6 +4,9 @@ import Image from 'react-bootstrap/Image'
 import "./about.css"
 import nebsbefore from "../images/nebsbefore.jpg"
 import nebsafter from "../images/nebsafter.jpg"
+import gam1 from "../images/gam1.jpg"
+import gam2 from "../images/gam2.jpg"
+import gam3 from "../images/gam3.jpg"
 
 
 const About = () => {
@@ -35,6 +38,15 @@ const About = () => {
           This is me before coffee. Asleep, unproductive, a disgrace to society.
         <Image className="nebsimage" src={nebsafter}></Image>
           And this is me now, looking great (thank you). I haven't slept in 3 days, I have been contributing to society.
+      </div>
+      <div className="gamimage-container">
+        This is my sister Gamora. She spends her time sleeping, sunbathing and playing video games. What a loser.
+        <Image className="gamimage" src={gam1}></Image>
+        <Image className="gamimage" src={gam2}></Image>
+        <Image className="gamimage" src={gam3}></Image>
+        She's such an unproductive member of society.
+        <em>DON'T BE LIKE HER,</em>
+        buy my coffee (╯°□°)╯︵ ┻━┻
       </div>
     </div>
     );

@@ -1,11 +1,12 @@
 .About-page {
   width: 100vw;
   color: white;
-  background-color: rgba(0, 0, 0, 0.9)
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding-bottom: 10vh;
 }
 
 .About-text {
-  text-align: center;
   padding: 3em;
 }
 
@@ -32,4 +33,16 @@
 
 .nebsimage {
   margin: 2em;
+}
+
+.gamimage-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.gamimage {
+  padding: 2em;
 }
